@@ -1,0 +1,135 @@
+.wrapper {
+}
+.notebook {
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.notebook__wrapper {
+    padding: 30px;
+    background-color:darkslategray;
+    width: 400px;
+    min-height: 500px;
+    transition: 0.8s;
+}
+
+.notebook__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+.notebook__addText {
+    width: 100%;
+}
+.notebook__addText-btn {
+    padding: 11px;
+    background-color: rgba(0, 140, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.notebook__addText-btn__text {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.notebook__addText-btn:active {
+    background-color: #fff;
+}
+
+.notebook__addText-btn__text.activeClose {
+    transform: rotate(45deg);
+}
+
+
+.notebook__list {
+    position: relative;
+    padding: 7px;
+    width: 97%;
+    min-height: 450px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.notebook__list-FormToFill {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 100%;
+    min-height: 200px;
+    background-color: darkslategray;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.notebook__list-FormToFill.openNotebook {
+    display: flex;
+}
+
+.notebook__list-FormToFill__text {
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 60px;
+}
+.notebook__list-FormToFill__btn {
+    height: 35px;
+    background-color: darkorange;
+    border: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.notebook__list-FormToFill__btn:active {
+    background-color: red;
+}
+
+.notebook__item {
+    position: relative;
+    background-color: rgb(0, 140, 255);
+    min-height: 70px;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+.notebook__item-delete {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.notebook__item-delete__btn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40px;
+    min-height: 70px;
+}
+
+.notebook__item-delete__btn:hover {
+    background-color: black;
+}
+
+.notebook__item-delete__btn:active {
+    background-color: red;
+}
+.fa-solid {
+    color: rgb(255, 0, 0);
+}
+.notebook__item-text {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
